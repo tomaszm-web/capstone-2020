@@ -124,7 +124,7 @@ def post_actors(jwt):
 
 @APP.route('/actors/<int:id>', methods=['PATCH'])
 @requires_auth('patch:actors')
-def update_drink(jwt, id):
+def update_actor(jwt, id):
     body = request.get_json()
     actor = Actor.query.filter(Actor.id == id).one_or_none()
     if not actor:
