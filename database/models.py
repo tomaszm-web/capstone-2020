@@ -32,7 +32,7 @@ def db_drop_and_create_all():
 class Actor(db.Model):
     __tablename__ = 'actors'
     # Autoincrementing, unique primary key
-    id = db.Column(Integer().with_variant(Integer, "sqlite"), primary_key=True)
+    id = db.Column(Integer, primary_key=True)
     name = Column(String(120), nullable=False)
     role = Column(String(120), nullable=False)
     gender = Column(String(120), nullable=False)
@@ -66,7 +66,7 @@ class Actor(db.Model):
 class Movie(db.Model):
     __tablename__ = 'movies'
     # Autoincrementing, unique primary key
-    id = Column(Integer().with_variant(Integer, "sqlite"), primary_key=True)
+    id = Column(Integer, primary_key=True)
     title = Column(String(120), nullable=False)
     release_year = Column(Integer, nullable=False)
 
