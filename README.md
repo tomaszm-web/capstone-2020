@@ -35,7 +35,8 @@ This will install all of the required packages we selected within the `requireme
 - [Auth0](https://auth0.com/) is a service which is used for authentication and authorization.
 The following roles and permissions were created within Auth0:
 a) Role: Casting Assistant 
-   Permissions: get:movies 
+   Permissions: 
+                get:movies 
                 get:actors
 b) Role: Casting Director
    Permissions: get:movies 
