@@ -33,7 +33,22 @@ This will install all of the required packages we selected within the `requireme
 - [Postman] is a development tool used to write and run tests to ensure that the API is working as intended.
 
 - [Auth0](https://auth0.com/) is a service which is used for authentication and authorization.
-
+The following roles and permissions were created within Auth0:
+a) Role: Casting Assistant 
+   Permissions: get:movies 
+                get:actors
+b) Role: Casting Director
+   Permissions: get:movies 
+                get:actors
+                post:actors
+                delete:actors
+                patch:movies
+                patch:actors
+c) Role: Executive Producer
+   Permissions: All permissions a Casting Director has and 
+                post:movies
+                delete:movies
+   
 ## Running the server
 
 To run the server, execute:
