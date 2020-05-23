@@ -30,6 +30,8 @@ This will install all of the required packages we selected within the `requireme
 
 - [Flask-CORS](https://flask-cors.readthedocs.io/en/latest/#) is the extension we'll use to handle cross origin requests from our frontend server. 
 
+- [Auth0](https://auth0.com/) is the service we'll be using for proper authentication and authorization.
+
 ## Running the server
 
 To run the server, execute:
