@@ -55,15 +55,16 @@ The API will return four error types when requests fail:
     405: Method not allowed
 
 ENDPOINTS:
-GET '/actors'
-GET '/movies'
-POST '/actors'
-POST '/movies'
-PATCH '/actors/<int:id>'
-PATCH '/movies/<int:id>'
-DELETE '/actors/<int:id>'
-DELETE '/movies/<int:id>'
 
+    GET '/actors'
+    GET '/movies'
+    POST '/actors'
+    POST '/movies'
+    PATCH '/actors/<int:id>'
+    PATCH '/movies/<int:id>'
+    DELETE '/actors/<int:id>'    
+    DELETE '/movies/<int:id>'
+    
 GET '/actors'
  - Returns a list of actors.
 {
