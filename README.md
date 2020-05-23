@@ -1,6 +1,9 @@
 Casting Agency Capstone Project
 
 ## Getting Started
+Casting Agency Specifications
+
+The Casting Agency models a company that is responsible for creating movies and managing and assigning actors to those movies. You are an Executive Producer within the company and are creating a system to simplify and streamline your process.
 
 ### Installing Dependencies
 
@@ -23,6 +26,12 @@ pip install -r requirements.txt
 This will install all of the required packages we selected within the `requirements.txt` file.
 
 ##### Key Dependencies
+- [Heroku] This is a cloud platform where this Git repository was pushed to and built from. The following files were used to setup the app on Heroku:
+a) requirements.txt contains all required Python libraries which were installed  
+b) Procfile contains instructions to start up  Gunicorn web server
+c) manage.py is used to run all migrations to Postgres dabase hoseted on Heroku platform
+
+The Capstone Application is live at: https://capstone-2020.herokuapp.com
 
 - [Flask](http://flask.pocoo.org/)  is a lightweight backend microservices framework. Flask is required to handle requests and responses.
 
