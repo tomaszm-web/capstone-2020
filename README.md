@@ -1,7 +1,4 @@
-Casting Agency Capstone Project
-
-## Getting Started
-Casting Agency Specifications
+### Casting Agency Specifications
 
 The Casting Agency models a company that is responsible for creating movies and managing and assigning actors to those movies. You are an Executive Producer within the company and are creating a system to simplify and streamline your process.
 
@@ -17,7 +14,7 @@ We recommend working within a virtual environment whenever using Python for proj
 
 #### PIP Dependencies
 
-Once you have your virtual environment setup and running, install dependencies by naviging to the `/backend` directory and running:
+Once you have your virtual environment setup and running, install dependencies by naviging to the `/capstone-2020` directory and running:
 
 ```bash
 pip install -r requirements.txt
