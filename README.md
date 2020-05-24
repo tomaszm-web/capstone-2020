@@ -39,6 +39,8 @@ The Capstone Application is live at: https://capstone-2020.herokuapp.com
 - [Postman] is a development tool used to write and run tests to ensure that the API is working as intended.
 
 - [Auth0](https://auth0.com/) is a service which is used for authentication and authorization.
+##### How to set up authentication and authorization on Auth0:
+
 The following roles and permissions were created within Auth0:
 a) Role: Casting Assistant 
    Permissions: 
