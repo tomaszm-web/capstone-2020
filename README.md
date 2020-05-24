@@ -103,6 +103,7 @@ ENDPOINTS:
     
 GET '/actors'
  - Returns a list of actors.
+Example response:
 {
   "actors": [
     {
@@ -141,7 +142,6 @@ Request body: {name:string, role:string, gender:string, movie_id:int}
 - Creates a new actor using the submitted name, role, gender and movie_id. 
 - Returns actor id as an object together with the success value. 
 Example response:
-post
 {
   "id": 3,
   "success": true
@@ -151,16 +151,27 @@ POST '/movies'
 Request body: {title:string, release_year:int}
 - Creates a new movie using the submitted title and release_year. 
 - Returns movie id as an object together with the success value. 
-
 Example response:
-post
 {
   "id": 3,
   "success": true
 }
 
 PATCH '/actors/<int:id>'
+- Updates actor information related to a given id. Name, role or gender can be updated.
+Example response:
+{
+  "id": 2,
+  "success": true
+}
+
 PATCH '/movies/<int:id>'
+- Updates movie information related to a given id. Title or release_year can be updated.
+Example response:
+{
+  "id": 2,
+  "success": true
+}
 
 DELETE '/actors/<int:id>'
 - Deletes the actor of the given ID if it exists. Returns the id of the deleted actor and success value.
