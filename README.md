@@ -41,9 +41,9 @@ The Capstone Application is live at: https://capstone-2020.herokuapp.com
 - [Auth0](https://auth0.com/) is a service which is used for authentication and authorization.
 ##### How to set up authentication and authorization on Auth0:
 
-a) Sign up for an Auth0 account at https://auth0.com/. You can either use username and password or log in with a social
+1. Sign up for an Auth0 account at https://auth0.com/. You can either use username and password or log in with a social
 provider (such as Facebook, Google, or Apple).Once you create your account you will be asked to create a tenant.
-b) When you create an application in the Dashboard, choose application type: Single-Page App.
+2. When you create an application in the Dashboard, choose application type: Single-Page App.
 c) Create a new API - in API Settings:
         Enable RBAC
         Enable Add Permissions in the Access Token
