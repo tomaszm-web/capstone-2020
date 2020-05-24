@@ -24,9 +24,9 @@ This will install all of the required packages we selected within the `requireme
 
 ##### Key Dependencies
 - [Heroku] This is a cloud platform where this Git repository was pushed to and built from. The following files were used to setup the app on Heroku:
-a) requirements.txt contains all required Python libraries which were installed  
-b) Procfile contains instructions to start up  Gunicorn web server
-c) manage.py is used to run all migrations to Postgres dabase hoseted on Heroku platform
+1. requirements.txt contains all required Python libraries which were installed  
+2. Procfile contains instructions to start up  Gunicorn web server
+3. manage.py is used to run all migrations to Postgres dabase hoseted on Heroku platform
 
 The Capstone Application is live at: https://capstone-2020.herokuapp.com
 
@@ -44,7 +44,7 @@ The Capstone Application is live at: https://capstone-2020.herokuapp.com
 1. Sign up for an Auth0 account at https://auth0.com/. You can either use username and password or log in with a social
 provider (such as Facebook, Google, or Apple).Once you create your account you will be asked to create a tenant.
 2. When you create an application in the Dashboard, choose application type: Single-Page App.
-c) Create a new API - in API Settings:
+3. Create a new API - in API Settings:
         Enable RBAC
         Enable Add Permissions in the Access Token
    Create new API permissions:
@@ -56,7 +56,7 @@ c) Create a new API - in API Settings:
         patch:movies
         delete:actors
         delete:movies
-d) Go to Users & Roles/Roles to create the following roles:
+4. Go to Users & Roles/Roles to create the following roles:
         Casting Assistant
         - can get:actors and get: movies
         Casting Director
@@ -65,8 +65,8 @@ d) Go to Users & Roles/Roles to create the following roles:
         - can patch:actor and patch:movie
         Executive Producer
         - can perform all actions
-e) Go to Users & Roles/Users and create 3 users.
-f) Assign one role to each user.
+5. Go to Users & Roles/Users and create 3 users.
+6. Assign one role to each user.
    
 ## Running the server
 
