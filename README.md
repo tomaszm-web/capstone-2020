@@ -41,23 +41,21 @@ The Capstone Application is live at: https://capstone-2020.herokuapp.com
 - [Auth0](https://auth0.com/) is a service which is used for authentication and authorization.
 ##### How to set up authentication and authorization on Auth0:
 
-a) Sign up for an Auth0 account. You can either use username and password or log in with a social provider (such as Facebook, Google, or Apple).Once you create your account you will be asked to create a tenant.
-b) Create 
-    Select a unique tenant domain
-    Create a new, single page web application
-    Create a new API - in API Settings:
+a) Sign up for an Auth0 account at https://auth0.com/. You can either use username and password or log in with a social provider (such as Facebook, Google, or Apple).Once you create your account you will be asked to create a tenant.
+b) When you create an application in the Dashboard, choose application type: Single-Page App.
+c) Create a new API - in API Settings:
         Enable RBAC
         Enable Add Permissions in the Access Token
-    Create new API permissions:
+   Create new API permissions:
         get:actors
         get:movies
-        post:actor
-        post:movie
-        patch:actor
-        patch:movie
-        delete:actor
-        delete:movie
-    Create new roles for:
+        post:actors
+        post:movies
+        patch:actors
+        patch:movies
+        delete:actors
+        delete:movies
+d) Go to Users & Roles/Roles to create the following roles:
         Casting Assistant
         - can get:actors and get: movies
         Casting Director
@@ -66,33 +64,8 @@ b) Create
         - can patch:actor and patch:movie
         Executive Producer
         - can perform all actions
-    Register 3 users
-        Assign the Casting Assistant role to one
-        Assign the Casting Director role to another
-        Assign the Executive Producer role to the last
-    Sign into each account and make note of the JWT.
-    Test the endpoints with the latest version of [Postman](https://getpostman.com).
-        Import the postman collection "./udacity-fsnd-castingagency.postman_collection.json"
-        Right-clicking the collection folder for Casting Assistant, Casting Director and Executive Producer, navigate to the authorization tab, and include the JWT in the token field (you should have noted these JWTs).
-        Run the collection.
-        The collection points to live application: https://stemed-final-casting-agency.herokuapp.com/
-
-The following roles and permissions were created within Auth0:
-a) Role: Casting Assistant 
-   Permissions: 
-                get:movies 
-                get:actors
-b) Role: Casting Director
-   Permissions: get:movies 
-                get:actors
-                post:actors
-                delete:actors
-                patch:movies
-                patch:actors
-c) Role: Executive Producer
-   Permissions: All permissions a Casting Director has and 
-                post:movies
-                delete:movies
+e) Go to Users & Roles/Users and create 3 users.
+f) Assign one role to each user.
    
 ## Running the server
 
