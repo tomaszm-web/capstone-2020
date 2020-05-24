@@ -1,6 +1,6 @@
-### Casting Agency Specifications
+### Casting Agency Capstone Project 
 
-The Casting Agency models a company that is responsible for creating movies and managing and assigning actors to those movies. You are an Executive Producer within the company and are creating a system to simplify and streamline your process.
+This is my final project for the Udacity Full Stack Nanodegree. I created a RESTful API for performing CRUD operations for Actor and Movie models stored in a Postgresql database. This API is designed to simplify and streamline process occuring in casting agency. The process involves creating movies, managing and assigning actors to those movies.
 
 ### Installing Dependencies
 
