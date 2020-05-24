@@ -33,7 +33,7 @@ if __name__ == '__main__':
 !! NOTE THIS WILL DROP ALL RECORDS AND START YOUR DB FROM SCRATCH
 !! NOTE THIS MUST BE UNCOMMENTED ON FIRST RUN
 '''
-db_drop_and_create_all()
+#db_drop_and_create_all()
 
 ## ROUTES
 @APP.route('/actors', methods=['GET'])
