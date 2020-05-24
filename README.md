@@ -176,7 +176,7 @@ Example response:
 DELETE '/actors/<int:id>'
 - Deletes the actor of the given ID if it exists. Returns the id of the deleted actor and success value.
 - Request Arguments: id <int:id>
-
+Example response:
 {
   "deleted": 3, 
   "success": true
@@ -185,7 +185,7 @@ DELETE '/actors/<int:id>'
 DELETE '/movies/<int:id>'
 - Deletes the movie of the given ID if it exists. Returns the id of the deleted movie and success value.
 - Request Arguments: id <int:id>
-
+Example response:
 {
   "deleted": 3, 
   "success": true
